@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div style="margin: 30px;">
+            <h1>HTPT</h1>
+            <p>HTPT는 html을 ppt처럼 사용하기 위한 목적으로 만들어진 툴입니다.</p>
+            <p>이 문서는 body 태그에 margin 값이 30px 적용되어 있습니다.<br>
+            오브젝트와 같은 경우, 화면을 채우는 오브젝트임에도 불구하고 30px정도 공백이 나타날 수 있습니다.</p>
+            <h2>스타일 설정</h2>
+            <p>자동으로 스타일이 적용되는 것들</p>
+            <ul>
+                <li>버튼</li>
+                <li>글꼴(나눔고딕으로 설정됨)</li>
+            </ul>
+            <p>모든 설정은 class 값으로 이루어집니다.<br><br>
+            class=""에서 ""에 지정된 코드를 넣으시면 스타일이 적용됩니다.<br><br>
+            코드를 여러개 넣고 싶으시면 class="" 에서 class="abc xyz" 처럼 하시면 됩니다.<br>
+            예를 들어, dcdo 와 ttl 와 drgx 코드를 적용시키고 싶으시면 class="dcdo ttl drgx"처럼 하세요.</p>
+            <h3>제어 설정</h3>
+            <p>표기 양식: [제어 코드:제어 코드를 넣을 시 미치는 영향]</p>
+            <p class="drgx">[drgx:드래그 불가능]</p>
+            <h3>폰트 설정</h3>
+            모든 폰트의 스타일 코드는 4글자로 통일되어 있습니다.<br>
+            <p>(아래 미리보기 글꼴 표시는 폰트가 잘 보이게끔 볼드 효과를 적용한 바 있습니다.)<br>
+            표기 양식: [폰트 코드:폰트 코드를 넣을 시 설정되는 폰트]<br>
+            <div style="font-size: 30px;font-weight: bold;">
+                <div style="margin: 0;" class="btan">[btan:바탕]</div>
+                <div style="margin: 0;" class="dodm">[dodm:돋움]</div>
+                <div style="margin: 0;" class="gnsr">[gnsr:궁서]</div>
+                <div style="margin: 0;" class="gotc">[gotc:고딕]</div>
+                <div style="margin: 0;" class="nnpn">[nnpn:나눔손글씨]</div>
+                <div style="margin: 0;" class="nnsk">[nnsk:나눔스퀘어]</div>
+                <div style="margin: 0;" class="myzo">[myzo:나눔명조]</div>
+                <div style="margin: 0;" class="dcdo">[dcdo:독도]</div>
+            </div>
+            <h2>오브젝트 설정</h2>
+            <p><xmp><div class=""></div> 에서 ""에 지정된 오브젝트 코드를 넣으시면 오브젝트가 생성됩니다.</xmp>
+            표기 양식: [오브젝트 코드:오브젝트 코드를 넣을 시 생성되는 오브젝트]</p>
+            <div>
+                <div class="ttl">[ttl:홈페이지 환영글](오브젝트 안에 글자를 설정할 수 있음)</div>
+                <div class="line"><p style="padding: 10px;">[line:단락 나눔]</p></div>
+            </div>
+            <h2>자동으로 스타일이 적용되는 오브젝트의 스타일 미리보기</h2>
+            <button>버튼</button>
+        </div>
+    </body>
+</html>
