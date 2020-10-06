@@ -1,110 +1,62 @@
-<head>
-    <title>HTPT 문서</title> <!--사이트의 이름-->
-    <meta charset="utf-8"> <!--인코딩 양식(변경하지 않는 것을 추천)-->
-    <link rel="stylesheet" href="style.css"> <!--HTPT 스타일 불러오기-->
-    <link rel="shortcut icon" type="image/x-icon" href="htpt.png"> <!--사이트의 로고-->
-    <meta property="og:image" content="htpts.png"> <!--사이트의 이미지 (카카오톡, 디스코드 같은 곳에 이 사이트의 링크를 보내면 이 사진이 링크와 같이 뜸)-->
-</head>
-<body>
-    <stmp>HTPT</stmp>
-    <h1 style="margin: 0;"><ttl>환영합니다!</ttl></h1>
-    <div style="margin: 30px;">
-        <div>
-            <h2>HTPT란?</h2>
-            <p>htpt는 html을 ppt처럼 사용하는 것을 목적으로 하는 툴입니다.<br>
-            htpt는 누구나 쉽게 html으로 웹사이트를 만들기를 바라고 있습니다.</p>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTPT</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <meta property="og:title" content="HTPT">
+        <meta property="og:description" content="더 간단한 HTML">
+        <link rel="shortcut icon" type="image/x-icon" href="icon.png">
+        <meta property="og:image" content="ogimg.png">
+    </head>
+    <style>
+        p{
+            font-size: 20px;
+        }
+        xmp {
+            margin: 3px;
+        }
+        pre {
+            font-size: 20px;
+            -ms-user-select: none; 
+            -moz-user-select: -moz-none;
+            -khtml-user-select: none;
+            -webkit-user-select: none;
+            user-select: none;
+            -webkit-user-drag: none;
+            -webkit-user-drag: none;
+            -khtml-user-drag: none;
+            -moz-user-drag: none;
+            -o-user-drag: none;
+        }
+    </style>
+    <body>
+        <stmp><a href="index.html"><h1 style="float: left;font-size: 25px;line-height: 55px;margin: 0;cursor: pointer;color: black;">HTPT</h1></a><a href="grammar.html"><p style="color: black;margin: 0;font-size: 20px;text-align: right;line-height: 55px;cursor: pointer;">문법 확인</p></a></stmp>
+        <ttl>환영합니다!</ttl>
+        <sans>
+            <div id="a" style="background-image: url(2.png);"></div>
+            <div id="b" class="b" style="background-image: url(1.png);"></div>
+        </sans>
+        <div style="text-align: center;">
+            <h1 style="margin-top: 400px;font-size: 40px;">간단한 문법</h1>
+            <p style="margin-top: -20px;">HTPT는 매우 간단한 문법을 가지고 있습니다.<br>
+            백문이 불여일견! 직접 확인해볼까요?<br><pre>코드                                                        실행</pre></p>
+            <div style="width: 100%;height: 350px;margin-bottom: 60px;">
+                <div style="text-align: left;float: left;width: 350px;height: 350px;border-radius: 10px 0px 0px 10px;background-color: black;margin-left: calc(50% - 350px);color: white;">
+                <xmp style="margin-top: 15px;margin-left: 15px;"><stmp>나의 사이트</stmp></xmp><xmp style="margin-top: 5px;margin-left: 15px;"><ttl>환영합니다!</ttl></xmp></div>
+                <div style="float: left;width: 348px;height: 348px;border-radius: 0px 10px 10px 0px;background-color: white;border: 1px solid black;">
+                <stmp style="border-radius: 10px;">나의 사이트</stmp><ttl>환영합니다!</ttl></div>
+            </div>
+            <h1 style="font-size: 40px;">HTML 호환 100%</h1>
+            <p style="margin-bottom: 60px;">htpt는 css와 js로만 작성되었기 때문에 호환성 문제가 하나도 없습니다.<br>
+            IE든,크롬이든,파이어폭스든 html과 100% 호환되는거죠!
+            <br>html만 최신 버전이면 문제없어요.</p>
+            <h1 style="font-size: 40px;">지금 바로 시작해볼까요?</h1>
+            <button style="margin-right: 15px;" onclick = "window.open('grammar.html')">문법 확인하기</button>
+            <a href="htpt.zip" download="htpt.zip"><button style="margin-right: 15px;">오프라인 버전 다운로드</button></a>
+            <a  href="html_online.html" download="index.html"><button style="margin-bottom: 50px;">온라인 버전 다운로드</button></a>
         </div>
-        <hr>
-        <div>
-            <h2>htpt 문법 설명 표기 양식</h2>
-            <p>htpt는 tag와 class값으로 설정이 이루어집니다.<br>
-            tag 값으로 설정이 이루어지는 것은 [어느 tag를 넣어야 설정이 이루어지는지 : 앞의 tag를 넣으면 어떤 현상이 일어나는지] 로 작성하며,<br>
-            class 값으로 설정이 이루어지는 것은 {어느 class를 적용해야 설정이 이루어지는지 : 앞의 class를 적용하면 어떤 현상이 일어나는지}로 작성합니다.<br><br>
-            보통 오브젝트는 tag로 설정이 이루어지며, 글꼴과 스타일, 제어는 class 값으로 설정이 이루어집니다.</p>
-            <p>사이트맵과 환영글이 아닌 나머지 태그들은 margin값이 30px 적용되어 있어<br>
-            화면을 채우는 오브젝트임에도 불구하고 30px정도 공백이 나타날 수 있습니다.</p>
-        </div>
-        <hr>
-        <div>
-            <h2>HTPT 문법</h2>
-            <hr>
-            <div>
-                <h3>제어</h3>
-                <ul>
-                    <li class="drgx">{drgx : 드래그 불가능}</li>
-                    <li>{albr : body tag에 적용하면 html 문서가 어느 길이든지 무조건 스크롤바가 보이게 됨}</li>
-                    <li class="clk">{clk : a tag가 없어도 커서 모양이 pointer로 변경됨}</li>
-                </ul>
-            </div>
-            <hr>
-            <div>
-                <h3>모양</h3>
-                <ul>
-                    <li>{prpl : 프로필 사진처럼 라운드가 쳐짐}</li>
-                    <li>{sdw : 그림자가 생김}</li>
-                </ul>
-            </div>
-            <hr>
-            <div>
-                <h3>스타일</h3>
-                <div>
-                    <h4>자동으로 스타일이 적용되는 것들</h4>
-                    <ul>
-                        <li>글꼴(구글 노토산스로 설정됨)</li>
-                        <li>단락 나눔(hr tag)</li>
-                        <li>버튼 (button tag)</li>
-                        <li>사이트 로고 (favicon)</li>
-                        <li>사이트 타이틀 (title tag)</li>
-                        <li>사진 (img tag)</li>
-                        <li>선택 상자(select)</li>
-                        <li>인용문 (blockquote tag)</li>
-                        <li>제목, 내용 (h1~h6 tag, p tag)</li>
-                    </ul>
-                </div>
-            </div>
-            <hr>
-            <div>
-                <h3>글꼴</h3>
-                <ul>
-                    <div style="font-size: 25px;list-style:none;">
-                        <li class="btan">{btan : 바탕}</li>
-                        <li class="dodm">{dodm : 돋움}</li>
-                        <li class="gotc">{gotc : 고딕}</li>
-                        <li class="gnsr">{gnsr : 궁서}</li>
-                        <li class="myzo">{myzo : 나눔명조}</li>
-                        <li class="nngt">{nngt : 나눔고딕}</li>
-                        <li class="nnsk">{nnsk : 나눔스퀘어}</li>
-                        <li class="sida">{sida : 싱글데이}</li>
-                        <li class="bmja">{bmja : 배민주아}</li>
-                        <li class="dcdo">{dcdo : 독도}</li>
-                    </div>
-                </ul>
-            </div>
-            <hr>
-            <div>
-                <h3>오브젝트</h3>
-                <stmp>[stmp : 사이트맵](오브젝트 안에 글자를 설정할 수 있음)</stmp>
-                <ttl>[ttl : 환영글](오브젝트 안에 글자를 설정할 수 있음)</ttl>
-                <end>[end : 사이트 맨 밑 설명란. (사이트를 만든 사람이나 자신의 대표 대사를 넣는것을 추천)]</end>
-                <zacpum>5f5dbfc53cc6670efc1044f1</zacpum>
-                <p>[zacpum : zacpum tag 안에 있는 글자에 따라 엔트리 작품이 불러와짐]<br>
-                (예를 들어, 5f5dbfc53cc6670efc1044f1를 zacpum tag 안에 입력하면 https://playentry.org/api/iframe/project/5f5dbfc53cc6670efc1044f1 가 불러와짐)</p>
-            </div>
-        </div>
-    </div>
-    <hr>
-    <div style="margin: 30px;">
-        <h3>기타</h3>
-        <zac style="margin: 10px;" t="엔트리 연구소" p="비공임 ㅅㄱ" img="작품.png">http://naver.me/FeTnApYM</zac>
-        <p>[zac : 작품을 홍보함]</p>
-        <h4>사용 방법</h4>
-        <p>t 속성 = 제목<br>
-        p 속성 = 내용<br>
-        img 속성 = 작품 이미지</p>
-    </div>
-    <hr>
-    <blockquote style="margin-bottom: 40px;">프로그램을 사지만 말고 만드세요.</blockquote>
-    <p style="margin-top: -75px;margin-right: 30px;text-align: right;color: white;">-버락 오바마</p>
-    <end>ⓒ ddtt786</end>
-</body>
-<script src="import.js"></script> <!--HTPT 전용 tag를 html 양식으로 변환-->
+    </body>
+    </body>
+</html>
+<script src="index.js"></script>
